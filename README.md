@@ -1,6 +1,8 @@
 # ET GOES HOME
 Space AppS Challenge 2018 (Pasadena, CA)
+
 Category: Invent Your Own Challenge
+
 
 IET (IMMERSIVE EXOPLANET TELESCOPE) PROJECT
 

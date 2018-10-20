@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e14a72067f1ad408ec8d661bc560ce, type: 3}
+  m_Name: PlanetDataImportSettings
+  m_EditorClassIdentifier: 
+  templatePath: QuickSheet/ExcelPlugin/Templates
+  scriptFilePath: StarPlanetDB_Code/Runtime
+  editorScriptFilePath: StarPlanetDB_Code/Editor
+  sheetName: NASAapp_Trappist1_PLANET_DATA.xls
+  workSheetName: NASAapp_PlanetaryData
+  columnHeaderList:
+  - type: 1
+    name: pl_hostname
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: pl_name
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: pl_discmethod
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbper
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbpererr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbpererr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbperlim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbsmax
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbsmaxerr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbsmaxerr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbsmaxlim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbeccen
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbeccenerr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbeccenerr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbeccenlim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbincl
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbinclerr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbinclerr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_orbincllim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_bmassj
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_bmassjerr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_bmassjerr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_bmassjlim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_radj
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_radjerr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_radjerr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_radjlim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_dens
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_denserr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_denserr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: pl_denslim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: st_disterr1
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: st_disterr2
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: st_distlim
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: eccentricity
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: eccentricity_error_min
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: eccentricity_error_max
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: inclination
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: inclination_error_min
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: inclination_error_max
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: discovered
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: temp_calculated
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: temp_calculated_error_min
+    isEnable: 0
+    isArray: 0
+  - type: 6
+    name: temp_calculated_error_max
+    isEnable: 0
+    isArray: 0
+  - type: 1
+    name: molecules
+    isEnable: 0
+    isArray: 1
+  excelFilePath: Assets/StarPlanetData/NASAapp_Trappist1_PLANET_DATA.xls
+  SheetNames:
+  - NASAapp_PlanetaryData
+  currentSelectedSheet: 0

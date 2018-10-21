@@ -145,9 +145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focusEnabled: 1
   dragAction:
-    id: 0
-    description: None
-    axisConstraint: 0
+    id: 1
+    description: Select
+    axisConstraint: 2
   hostTransform: {fileID: 0}
   distanceScale: 2
   rotationMode: 0
@@ -254,9 +254,9 @@ MonoBehaviour:
   isFocusRequired: 1
   onPointerUpActionEvent:
     inputAction:
-      id: 0
-      description: None
-      axisConstraint: 0
+      id: 1
+      description: Select
+      axisConstraint: 2
     unityEvent:
       m_PersistentCalls:
         m_Calls:
@@ -275,9 +275,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   onPointerDownActionEvent:
     inputAction:
-      id: 0
-      description: None
-      axisConstraint: 0
+      id: 1
+      description: Select
+      axisConstraint: 2
     unityEvent:
       m_PersistentCalls:
         m_Calls:
@@ -393,17 +393,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c359611469079ce459e6035fbd59fefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &866121722
+--- !u!1 &825388829
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 866121726}
-  - component: {fileID: 866121723}
-  - component: {fileID: 866121725}
-  - component: {fileID: 866121724}
+  - component: {fileID: 825388833}
+  - component: {fileID: 825388830}
+  - component: {fileID: 825388832}
+  - component: {fileID: 825388831}
   m_Layer: 0
   m_Name: UIRaycastCamera
   m_TagString: Untagged
@@ -411,12 +411,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!20 &866121723
+--- !u!20 &825388830
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 866121722}
+  m_GameObject: {fileID: 825388829}
   m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 3
@@ -451,12 +451,12 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &866121724
+--- !u!114 &825388831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 866121722}
+  m_GameObject: {fileID: 825388829}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -469,12 +469,12 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!114 &866121725
+--- !u!114 &825388832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 866121722}
+  m_GameObject: {fileID: 825388829}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -483,12 +483,12 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!4 &866121726
+--- !u!4 &825388833
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 866121722}
+  m_GameObject: {fileID: 825388829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -779,8 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf98dd1206224111a38765365e98e207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorPrefab: {fileID: 1000012072213228, guid: 5b3e2856904e43c680f84f326861032a,
-    type: 2}
+  cursorPrefab: {fileID: 0}
   maxGazeCollisionDistance: 10
   raycastLayerMasks:
   - serializedVersion: 2
@@ -803,7 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointingExtent: 10
-  uiRaycastCamera: {fileID: 866121723}
+  uiRaycastCamera: {fileID: 825388830}
   pointingRaycastLayerMasks:
   - serializedVersion: 2
     m_Bits: 4294967291
@@ -866,7 +865,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 866121726}
+  - {fileID: 825388833}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

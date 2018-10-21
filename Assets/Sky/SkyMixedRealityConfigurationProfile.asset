@@ -43,5 +43,5 @@ MonoBehaviour:
   diagnosticsSystemType:
     reference: Microsoft.MixedReality.Toolkit.SDK.DiagnosticsSystem.MixedRealityDiagnosticsManager,
       Microsoft.MixedReality.Toolkit.SDK
-  registeredServiceProvidersProfile: {fileID: 11400000, guid: efbaf6ea540c69f4fb75415a5d145a53,
+  registeredServiceProvidersProfile: {fileID: 11400000, guid: 6abb1aa751e66d844a9337ce06173ec3,
     type: 2}

@@ -259,8 +259,13 @@ namespace Microsoft.MixedReality.Toolkit.SDK.Input
             Debug.Assert(eventData != null);
             var baseInputEventData = ExecuteEvents.ValidateEventData<BaseInputEventData>(eventData);
             Debug.Assert(baseInputEventData != null);
-            Debug.Assert(baseInputEventData.InputSource != null, $"Failed to find an input source for {baseInputEventData}");
             Debug.Assert(!baseInputEventData.used);
+
+            if (baseInputEventData.InputSource == null)
+            {
+                Debug.LogError($"Failed to find an input source for {baseInputEventData}");
+                return;
+            }
 
             // Send the event to global listeners
             base.HandleEvent(eventData, eventHandler);
@@ -272,37 +277,47 @@ namespace Microsoft.MixedReality.Toolkit.SDK.Input
                 return;
             }
 
-            GameObject focusedObject = FocusProvider?.GetFocusedObject(baseInputEventData);
-
-            // Handle modal input if one exists
-            if (modalInputStack.Count > 0)
+            if (baseInputEventData.InputSource.Pointers == null)
             {
-                GameObject modalInput = modalInputStack.Peek();
+                Debug.LogError($"InputSource {baseInputEventData.InputSource.SourceName} doesn't have any registered pointers! Input Sources without pointers should use the GazeProvider's pointer as a default fallback.");
+                return;
+            }
 
-                // If there is a focused object in the hierarchy of the modal handler, start the event bubble there
-                if (focusedObject != null && modalInput != null && focusedObject.transform.IsChildOf(modalInput.transform))
+            // Get the focused object for each pointer of the event source
+            for (int i = 0; i < baseInputEventData.InputSource.Pointers.Length; i++)
+            {
+                GameObject focusedObject = FocusProvider?.GetFocusedObject(baseInputEventData.InputSource.Pointers[i]);
+
+                // Handle modal input if one exists
+                if (modalInputStack.Count > 0)
+                {
+                    GameObject modalInput = modalInputStack.Peek();
+
+                    // If there is a focused object in the hierarchy of the modal handler, start the event bubble there
+                    if (focusedObject != null && modalInput != null && focusedObject.transform.IsChildOf(modalInput.transform))
+                    {
+                        if (ExecuteEvents.ExecuteHierarchy(focusedObject, baseInputEventData, eventHandler) && baseInputEventData.used)
+                        {
+                            return;
+                        }
+                    }
+                    // Otherwise, just invoke the event on the modal handler itself
+                    else
+                    {
+                        if (ExecuteEvents.ExecuteHierarchy(modalInput, baseInputEventData, eventHandler) && baseInputEventData.used)
+                        {
+                            return;
+                        }
+                    }
+                }
+
+                // If event was not handled by modal, pass it on to the current focused object
+                if (focusedObject != null)
                 {
                     if (ExecuteEvents.ExecuteHierarchy(focusedObject, baseInputEventData, eventHandler) && baseInputEventData.used)
                     {
                         return;
                     }
-                }
-                // Otherwise, just invoke the event on the modal handler itself
-                else
-                {
-                    if (ExecuteEvents.ExecuteHierarchy(modalInput, baseInputEventData, eventHandler) && baseInputEventData.used)
-                    {
-                        return;
-                    }
-                }
-            }
-
-            // If event was not handled by modal, pass it on to the current focused object
-            if (focusedObject != null)
-            {
-                if (ExecuteEvents.ExecuteHierarchy(focusedObject, baseInputEventData, eventHandler) && baseInputEventData.used)
-                {
-                    return;
                 }
             }
 

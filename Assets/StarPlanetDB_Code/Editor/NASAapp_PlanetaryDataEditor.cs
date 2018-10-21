@@ -11,7 +11,8 @@ using UnityQuickSheet;
 ///
 [CustomEditor(typeof(NASAapp_PlanetaryData))]
 public class NASAapp_PlanetaryDataEditor : BaseExcelEditor<NASAapp_PlanetaryData>
-{	    
+{
+    int junk;
     public override bool Load()
     {
         NASAapp_PlanetaryData targetData = target as NASAapp_PlanetaryData;

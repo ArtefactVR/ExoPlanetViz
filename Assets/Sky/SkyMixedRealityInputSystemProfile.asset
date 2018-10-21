@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Name: SkyMixedRealityInputSystemProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  inputActionsProfile: {fileID: 11400000, guid: 723eb97b02944311b92861f473eee53e,
+  inputActionsProfile: {fileID: 11400000, guid: f9ce4c57d2d608e44a0185521f58d245,
     type: 2}
-  gesturesProfile: {fileID: 11400000, guid: bd7829a9b29409045a745b5a18299291, type: 2}
-  inputActionRulesProfile: {fileID: 11400000, guid: 03945385d89102f41855bc8f5116b199,
+  gesturesProfile: {fileID: 11400000, guid: 7d36e36cc423b134880eae24d2fc2eff, type: 2}
+  inputActionRulesProfile: {fileID: 11400000, guid: 9968d7f3c4d691348bbec10a56792e05,
     type: 2}
-  pointerProfile: {fileID: 11400000, guid: 48aa63a9725047b28d4137fd0834bc31, type: 2}
+  pointerProfile: {fileID: 11400000, guid: 0655c28611e7d0841973b6f71f00211e, type: 2}
   speechCommandsProfile: {fileID: 11400000, guid: b6507f0cdcc84dd4980aec836b58d9c2,
     type: 2}
   enableControllerMapping: 1
-  controllerMappingProfile: {fileID: 11400000, guid: 39ded1fd0711a0c448413d0e1ec4f7f3,
+  controllerMappingProfile: {fileID: 11400000, guid: d52b561a78dbed54c86d68ac74324d48,
     type: 2}
   controllerVisualizationProfile: {fileID: 11400000, guid: 345c06fdf3732db46b96299bd3cba653,
     type: 2}

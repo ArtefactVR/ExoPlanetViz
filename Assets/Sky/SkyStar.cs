@@ -13,8 +13,11 @@ public class SkyStar : MonoBehaviour {
     public float starPosY;
     public float starPosZ=2f;
 
-	// Use this for initialization
-	void Start () {
+
+    TextMesh starNameText;
+
+    // Use this for initialization
+    void Start () {
         RefreshStar();
 	}
 	
@@ -25,8 +28,19 @@ public class SkyStar : MonoBehaviour {
 
     public void RefreshStar()
     {
+        starNameText = GameObject.Find("StarNameText").GetComponent<TextMesh>();
+
         transform.position = new Vector3(starPosX, starPosY, starPosZ);
         GetComponent<Renderer>().material.color = new Color(starColorR, starColorG, starColorB, starColorA);
         transform.localScale = Vector3.one * starSize;
+        GetComponent<SphereCollider>().radius= Mathf.Sqrt(Vector3.Distance(transform.position, Vector3.zero)) * 0.1f;
+    }
+
+    public void DisplayStarName()
+    {
+        starNameText.text = starName;
+        starNameText.transform.position = transform.position + Vector3.up * starSize;
+        starNameText.transform.localScale = Vector3.one*Mathf.Sqrt(Vector3.Distance(transform.position, Vector3.zero))*0.2f;
+        starNameText.transform.forward = Camera.main.transform.forward;
     }
 }

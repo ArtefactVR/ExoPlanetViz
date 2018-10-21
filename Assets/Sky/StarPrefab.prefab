@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23305417864329476}
   - component: {fileID: 135876195037499032}
   - component: {fileID: 114487207809718776}
+  - component: {fileID: 114559678363895520}
   m_Layer: 18
   m_Name: StarPrefab
   m_TagString: Untagged
@@ -105,6 +106,59 @@ MonoBehaviour:
   starPosX: 0
   starPosY: 0
   starPosZ: 2
+--- !u!114 &114559678363895520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943846524687360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70735d6526ec4903948e9cffe0a70f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFocusRequired: 1
+  onPointerUpActionEvent:
+    inputAction:
+      id: 0
+      description: 
+      axisConstraint: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  onPointerDownActionEvent:
+    inputAction:
+      id: 0
+      description: 
+      axisConstraint: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  onPointerClickedActionEvent:
+    inputAction:
+      id: 1
+      description: Select
+      axisConstraint: 2
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114487207809718776}
+          m_MethodName: DisplayStarName
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!135 &135876195037499032
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -17,6 +17,8 @@ public class SkyUniverse : MonoBehaviour {
             skyStars[i] = GenerateRandomStar(i);
         }
 
+
+
 	}
 	
 	// Update is called once per frame

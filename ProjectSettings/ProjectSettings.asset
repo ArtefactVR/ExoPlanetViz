@@ -588,11 +588,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: C:\ExoPlanetViz\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: ET Goes Home
+  metroCertificateIssuer: ET Goes Home
+  metroCertificateNotAfter: 00579618bd88d501
   metroApplicationDescription: ExoPlanet Visualization
   wsaImages: {}
   metroTileShortName: ExoPlanetViz

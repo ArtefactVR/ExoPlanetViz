@@ -1,5 +1,5 @@
 # Project iET (Immersive Exoplanet Telescope)
-<i>Created by Team <a href="http://bit.ly/2OotcCg">ET Goes Home</a></i><br>
+<i>Created by Team <a href="http://bit.ly/2R2VlfO">ET Goes Home</a></i><br>
 <b>Recipient of the Community Engagement and Education Award</b><br>
 Space AppS Challenge 2018 (Pasadena, CA)
 

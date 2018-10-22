@@ -1,7 +1,7 @@
 # Project iET (Immersive Exoplanet Telescope)
 <i>Created by Team <a href="http://bit.ly/2R2VlfO">ET Goes Home</a></i><br>
 <b>Recipient of the Community Engagement and Education Award</b><br>
-Space AppS Challenge 2018 (Pasadena, CA)
+2018 International Space Apps Challenge (Pasadena, CA)
 
 Mixed Reality immersive experience of known exoplanets with smart filtering for locating earth-like exoplanets. This app will provide context + presence of the planets + star systems, giving an alternate way for scientists to look at the data.
 

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b71cb900fa9dec5488df2deb180db58f, type: 3}
-  m_Name: SkyMixedRealityInputSystemProfile
+  m_Name: MixedRealityInputSystemProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  inputActionsProfile: {fileID: 11400000, guid: 723eb97b02944311b92861f473eee53e,
+  inputActionsProfile: {fileID: 11400000, guid: fa57821b24894a8469f70adeb31ea875,
     type: 2}
   gesturesProfile: {fileID: 11400000, guid: bd7829a9b29409045a745b5a18299291, type: 2}
   inputActionRulesProfile: {fileID: 11400000, guid: 03945385d89102f41855bc8f5116b199,
@@ -21,7 +21,7 @@ MonoBehaviour:
   speechCommandsProfile: {fileID: 11400000, guid: b6507f0cdcc84dd4980aec836b58d9c2,
     type: 2}
   enableControllerMapping: 1
-  controllerMappingProfile: {fileID: 11400000, guid: 39ded1fd0711a0c448413d0e1ec4f7f3,
+  controllerMappingProfile: {fileID: 11400000, guid: 0e7497f81bba0e14f98a9b0532f843e6,
     type: 2}
   controllerVisualizationProfile: {fileID: 11400000, guid: 345c06fdf3732db46b96299bd3cba653,
     type: 2}

@@ -21,9 +21,9 @@ MonoBehaviour:
       Microsoft.MixedReality.Toolkit.SDK
   targetExperienceScale: 3
   enableCameraProfile: 1
-  cameraProfile: {fileID: 11400000, guid: 8089ccfdd4494cd38f676f9fc1f46a04, type: 2}
+  cameraProfile: {fileID: 11400000, guid: 02909c6b0b460c14b98cbc77f3e8438e, type: 2}
   enableInputSystem: 1
-  inputSystemProfile: {fileID: 11400000, guid: bb793a8de80907e4593f4efe93687427, type: 2}
+  inputSystemProfile: {fileID: 11400000, guid: 840bb6d9c8421054389c803230ba52a4, type: 2}
   inputSystemType:
     reference: Microsoft.MixedReality.Toolkit.SDK.Input.MixedRealityInputManager,
       Microsoft.MixedReality.Toolkit.SDK

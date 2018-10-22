@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a1cf5fd47e548e6a23bdd3ddcc00cf6, type: 3}
-  m_Name: SkyMixedRealityControllerMappingProfile
+  m_Name: MixedRealityControllerMappingProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   mixedRealityControllerMappingProfiles:
@@ -208,9 +208,9 @@ MonoBehaviour:
       axisType: 4
       inputType: 17
       inputAction:
-        id: 11
-        description: Scroll
-        axisConstraint: 4
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 0
       axisCodeX: AXIS_1
       axisCodeY: AXIS_2
@@ -286,9 +286,9 @@ MonoBehaviour:
       axisType: 3
       inputType: 10
       inputAction:
-        id: 7
-        description: Grip Press
-        axisConstraint: 3
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 0
       axisCodeX: AXIS_9
       axisCodeY: 
@@ -299,9 +299,9 @@ MonoBehaviour:
       axisType: 3
       inputType: 10
       inputAction:
-        id: 6
-        description: Trigger
-        axisConstraint: 3
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 0
       axisCodeX: AXIS_10
       axisCodeY: 
@@ -338,9 +338,9 @@ MonoBehaviour:
       axisType: 2
       inputType: 7
       inputAction:
-        id: 1
-        description: Select
-        axisConstraint: 2
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 334
       axisCodeX: 
       axisCodeY: 
@@ -351,9 +351,9 @@ MonoBehaviour:
       axisType: 2
       inputType: 7
       inputAction:
-        id: 1
-        description: Select
-        axisConstraint: 2
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 335
       axisCodeX: 
       axisCodeY: 
@@ -377,9 +377,9 @@ MonoBehaviour:
       axisType: 2
       inputType: 7
       inputAction:
-        id: 2
-        description: Menu
-        axisConstraint: 2
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 331
       axisCodeX: 
       axisCodeY: 
@@ -390,9 +390,9 @@ MonoBehaviour:
       axisType: 2
       inputType: 7
       inputAction:
-        id: 1
-        description: Select
-        axisConstraint: 2
+        id: 0
+        description: None
+        axisConstraint: 0
       keyCode: 332
       axisCodeX: 
       axisCodeY: 

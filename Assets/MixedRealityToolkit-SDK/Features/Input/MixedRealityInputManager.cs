@@ -503,10 +503,13 @@ namespace Microsoft.MixedReality.Toolkit.SDK.Input
         /// <inheritdoc />
         public void RaiseSourceDetected(IMixedRealityInputSource source, IMixedRealityController controller = null)
         {
+            if (Application.isEditor && !DetectedInputSources.Contains(source))
+            {
+                Debug.LogWarning($"{source.SourceName} has already been registered with the Input Manager!");
+            }
+
             // Create input event
             sourceStateEventData.Initialize(source, controller);
-
-            Debug.Assert(!DetectedInputSources.Contains(source), $"{source.SourceName} has already been registered with the Input Manager!");
 
             DetectedInputSources.Add(source);
 
@@ -529,10 +532,13 @@ namespace Microsoft.MixedReality.Toolkit.SDK.Input
         /// <inheritdoc />
         public void RaiseSourceLost(IMixedRealityInputSource source, IMixedRealityController controller = null)
         {
+            if (Application.isEditor && DetectedInputSources.Contains(source))
+            {
+                Debug.LogWarning($"{source.SourceName} was never registered with the Input Manager!");
+            }
+
             // Create input event
             sourceStateEventData.Initialize(source, controller);
-
-            Debug.Assert(DetectedInputSources.Contains(source), $"{source.SourceName} was never registered with the Input Manager!");
 
             DetectedInputSources.Remove(source);
 

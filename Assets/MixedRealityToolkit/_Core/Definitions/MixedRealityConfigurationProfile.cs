@@ -133,7 +133,7 @@ namespace Microsoft.MixedReality.Toolkit.Core.Definitions
         /// </summary>
         public bool IsBoundarySystemEnabled
         {
-            get { return boundarySystemType != null && boundarySystemType.Type != null && enableBoundarySystem; }
+            get { return boundarySystemType != null && boundarySystemType.Type != null && enableBoundarySystem && boundaryVisualizationProfile != null; }
             private set { enableInputSystem = value; }
         }
 
